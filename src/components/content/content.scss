@@ -1,22 +1,13 @@
 .content {
-    width: calc(100% - 370px);
-    height: 100%;
-    margin-left: 170px;
+    flex: 1 0 auto;
+    display: flex;
 }
 .showbar {
-    transform: translateX(0);
-    transition: all 0.5s;
     width: 450px;
     height: 100%;
-    position: fixed;
-    top: 0;
-    z-index: 5;
 
     .cover-image {
-        position: absolute;
-        top: 0;
-        left: 0;
-        background: #c1c1c1;
+        background: url('../../static/bg.jpg');
         width: 100%;
         height: 100%;
         background-position: center;
@@ -57,6 +48,10 @@
             border-radius: 5px;
             height: 40px;
             background-color: #6bd95b;
+
+            i {
+                padding-right: 5px;
+            }
         }
     }
 }

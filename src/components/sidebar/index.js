@@ -28,8 +28,8 @@ class Sidebar extends React.Component {
 function UserNav() {
     return (
         <ul className="nav-user">
-            <li><a href="#"><i className="fa fa-font"></i><span>&nbsp;&nbsp;显示模式</span></a></li>
-            <li><a href="#"><i className="fa fa-sign-in"></i><span>&nbsp;&nbsp;登录</span></a></li>
+            <li><a href="#"><i className="iconfont icon-font"></i><span>&nbsp;&nbsp;显示模式</span></a></li>
+            <li><a href="#"><i className="iconfont icon-log-out"></i><span>&nbsp;&nbsp;登录</span></a></li>
         </ul>
     )
 }

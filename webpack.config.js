@@ -35,9 +35,13 @@ var config = {
             }
         },
         {
+            test: /\.(png|jpg)$/,
+            loader: 'url-loader?limit=8192&name=images/[name].[ext]'
+　　　　},
+        {
             test: /\.css$/,
-            exclude: /node_modules/,
-            loader: extractSass.extract('style-loader', 'css-loader')
+            include: /src/,
+            use: extractSass.extract('style-loader', 'css-loader')
         },
         {
             test: /\.scss$/,

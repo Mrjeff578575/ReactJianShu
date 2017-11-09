@@ -1,5 +1,6 @@
 import React from 'react'
 
+import ArticleTypeList from './typeList'
 import ArticleList from './list'
 import {} from './article.scss'
  
@@ -11,7 +12,8 @@ class Article extends React.Component {
         return (
             <div className="article-page">
                 <ArticleNav />
-                <ArticleList show="daily"/>
+                <ArticleTypeList show="daily"/>
+                <ArticleList />
             </div>
         )
     }
@@ -28,7 +30,7 @@ function ArticleNav() {
                 <span className="input">
                     <input type="search" placeholder="搜索" />
                 </span>
-                <span className="search-icon"><i className="fa fa-seaSrch"></i></span>
+                <span className="search-icon"><i className="iconfont icon-search"></i></span>
             </span>					
         </nav>
     )

@@ -18,14 +18,14 @@ function LoginNav(props) {
     if (props.loginSuccess) {
         return (
             <nav>
-                <a href="#"><i className="fa fa-sign-in"></i>登录</a>
-                <a href="#"><i className="fa fa-user"></i>注册</a>
+                <a href="#"><i className="iconfont icon-log-out"></i>登录</a>
+                <a href="#"><i className="iconfont icon-user1"></i>注册</a>
             </nav>
         )
     } else {
         return (
             <nav>
-                <a href="#"><i className="fa fa-sign-in"></i>个人信息</a>
+                <a href="#"><i className="iconfont icon-user1"></i>个人信息</a>
             </nav>
         )
     }
