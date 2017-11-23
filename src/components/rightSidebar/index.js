@@ -1,5 +1,7 @@
 import React from 'react'
 
+import {} from './index.scss'
+
 class RightSidebar extends React.Component {
     constructor(props) {
         super(props)

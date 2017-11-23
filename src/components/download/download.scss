@@ -1,0 +1,98 @@
+.download-container{
+    flex: 1 0 auto;
+    height: 100%;
+
+    .content{
+        width: 900px;
+        margin: 0 auto;
+        height: 568px;
+        padding: 100px 0 100px 0;
+        text-align: center;
+
+        .page-left{
+            padding-top: 50px;
+            margin-right: 75px;
+            text-align: center;
+            display: inline-block;
+            width: 347px;
+            height: 457px;
+
+            .logo{
+                background: #eef094;
+                background-size: 100%;
+                background-repeat: no-repeat;
+                width: 252px;
+                height: 123px;
+                padding-bottom: 50px;
+                border-bottom: 1px solid #e6e6e6;
+                margin: 0 auto 60px auto;
+            }
+
+            .version-button {
+                margin-bottom: 15px;
+
+                a {
+                    border-radius: 5px;
+                    text-align: center;
+                    line-height: 58px;
+                    display: inline-block;
+                    background-color: #8EF2A4;
+                    color: #ffffff;
+                    width: 180px;
+                    height: 58px;
+                    font-size: 20px;
+                }
+
+                ul {
+                    width: 180px;
+                    display: inline-block;
+
+                    li {
+                        margin-bottom: 20px;
+                    }
+                }
+
+                .download-img {
+                    background: #c1c1c1;
+                    background-repeat: no-repeat;
+                    background-size: 100%;
+                    width: 135px;
+                    height: 135px;
+                    border: 1px solid #efefef;
+                    float: right;
+                    margin-left: 20px;
+                }
+            }
+
+            .share-list{
+                width: 347px;
+                text-align: center;
+
+                li {
+                    display: inline-block;
+                    width: 30px;
+                    height: 30px;
+                    background: #43e2ad;
+                    margin: 0 5px;
+                    color: #555555;
+                }
+
+                .text {
+                    width: 80px;
+                    line-height: 30px;
+                    vertical-align: top;
+                    background: #ffffff;
+                }
+            }
+        }
+
+        .app-img{
+            float: right;
+            background: #43e2ad;
+            background-repeat: no-repeat;
+            background-size: 100%;
+            width:450px;
+            height: 568px;
+        }
+    }
+}

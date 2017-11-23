@@ -1,18 +1,19 @@
 import React from 'react'
 
 import ArticleTypeList from './typeList'
-import ArticleList from './list'
 import {} from './article.scss'
  
 class Article extends React.Component {
     constructor(props) {
         super(props)
+        
     }
     render() {
+        const ArticleList = this.props.ArticleList
         return (
             <div className="article-page">
                 <ArticleNav />
-                <ArticleTypeList show="daily"/>
+                <ArticleTypeList show={this.props.shouldShow} articleTypeMap={this.props.typeList}/>
                 <ArticleList />
             </div>
         )

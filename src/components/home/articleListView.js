@@ -1,5 +1,7 @@
 import React from 'react'
 
+import {} from './articleList.scss'
+
 class ArticleList extends React.Component {
     constructor(props) {
         super(props)

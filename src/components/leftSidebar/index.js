@@ -1,28 +1,21 @@
 import React from 'react'
-
 import DropDown from './dropdown'
-import RightSidebar from './right'
-
-import {} from './sidebar.scss'
-
   
-class Sidebar extends React.Component {
+import {} from './index.scss'
+
+class LeftSidebar extends React.Component {
     constructor(props) {
         super(props)
     }
     render() {
-        let Content = this.props.content
         return (
-            <div className='container'>
-                <div className='sidebar'>
-                    <DropDown show='home'/>
-                    <UserNav />
-                </div>
-                <Content />
-                <RightSidebar />
+            <div className='sidebar'>
+                <DropDown show='home'/>
+                <UserNav />
             </div>
-        )  
+        )
     }
+
 }
 
 function UserNav() {
@@ -34,4 +27,4 @@ function UserNav() {
     )
 }
 
-export default Sidebar
+export default LeftSidebar
