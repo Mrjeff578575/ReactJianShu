@@ -6,13 +6,11 @@ class ArticleTypeList extends React.Component {
         this.articleTypeMap = this.props.articleTypeMap
     }
     render() {
-        console.log(this.articleTypeMap)
         const listItems = this.articleTypeMap.map((type, index) => 
-            <li key={index} className={ this.props.show == type.name ? 'active' : ''}>
+            <li key={index} className={ this.props.showType == type.name ? 'active' : ''} onClick={(e) => this.changeType(e, type.name)}>
                 <a href="#">{type.title}</a>
             </li>
         )
-        console.log(listItems)
         return (
             <div className="article-list">
                 <ul>
@@ -20,6 +18,10 @@ class ArticleTypeList extends React.Component {
 			    </ul>
 		</div>
         )
+    }
+
+    changeType(e, type) {
+        this.props.changeShowType(e, type);
     }
 }
 

@@ -28,10 +28,10 @@ function ShowBar() {
         <div className="showbar">
             <div className="cover-image"></div>
             <div className="text">
-            <h1>专题</h1>
-            <h3>让思想汇聚，流传</h3>
-            <p>专题内容由多位写作者提供</p>
-            <a href="#"><i className="iconfont icon-pen"></i>新建专题</a>
+                <h1>专题</h1>
+                <h3>让思想汇聚，流传</h3>
+                <p>专题内容由多位写作者提供</p>
+                <a href="#"><i className="iconfont icon-pen"></i>新建专题</a>
             </div>
         </div>
     )

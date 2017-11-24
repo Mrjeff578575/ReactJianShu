@@ -1,0 +1,240 @@
+form{
+    width: 300px;
+    margin: 0 auto;
+    border-bottom: 1px solid rgba(113,113,113,0.17);
+}
+.login-container{
+    flex: 1 0 auto;
+    padding: 125px 0 50px;
+    text-align: center;
+
+    .login-logo{
+        width: 252px;
+        height: 123px;
+        margin: 0 auto;
+        background: url('../../static/jianshu_logo.jpg');
+        background-size:100%;
+    }
+
+    .login-header{
+        font-size: 17.5px;
+        margin: 70px 0 40px 0;
+
+        a {
+            padding: 0 5px;
+            color: #b1b1b1;
+            cursor: pointer;
+
+            &.active {
+                color: #2a2a2a;
+            }
+        }
+        &:before{
+            position: relative;
+            display: inline-block;
+            top: -6px;
+            content: '';
+            height: 1px;
+            width: 100px;
+            background-color: rgba(113,113,113,0.17);
+        }
+
+        &:after{
+            position: relative;
+            top: -6px;
+            display: inline-block;
+            content: '';
+            height: 1px;
+            width: 100px;
+            background-color: rgba(113,113,113,0.17);
+        }
+
+    }
+}
+
+.login-input {
+    width: 300px;
+    margin: 0 auto;
+    border-bottom: 1px solid rgba(113,113,113,0.17);
+
+    .input-logo {
+        display: inline-block;
+        width: 34px;
+        height: 34px;
+        font-size: 12px;
+        padding: 4px 5px;
+        border:1px solid #ccc;
+        border-radius: 4px 0 0 4px;
+        line-height: 34px;
+    }
+
+    input[type="text"], input[type="password"] {
+        width: 246px;
+        height: 44px;
+        padding: 4px 12px;
+        border:1px solid #ccc;
+        border-radius: 0 4px 4px 0;
+        box-sizing: border-box;
+        vertical-align: top;
+
+        &:focus{
+            outline: none;
+            border-color: rgba(82,168,236,0.8);
+        }
+    }
+
+    .username, .password{
+        width: 300px;
+        height: 44px;
+        margin: 0 auto;
+    }
+
+    .username{
+        margin-bottom: 15px;
+    }
+
+    button {
+        margin: 30px auto 15px auto;
+        width: 100%;
+        height: 50px;
+        border: 0;
+        border-radius: 4px;
+        cursor: pointer;
+
+        span {
+            font-size: 18px;
+            color: #ffffff;
+        }
+
+        &.login{
+            background-color: #049cdb;
+        }
+
+        &.register{
+            background-color: #90DF66;
+        }
+    }
+
+    .login-control {
+        display: flex;
+        align-items: center;
+        margin-bottom: 15px;
+
+        .checkbox{	
+            flex: 0 0 20px;
+            margin: 0;
+            padding: 0;
+            width: 18px;
+            height: 18px;
+            background: url('../../static/checkbox.jpg') no-repeat;
+            background-position: -40px 0;
+            border: none;
+            cursor: pointer;
+            position: relative;
+
+            input {
+                position: absolute;
+                opacity: 0;
+            }
+        }
+
+        span {
+            
+            &.remmber {
+                flex: 1 0 auto;
+                text-align: left;
+            }
+
+            font-size: 12px;
+            color: #555555;
+
+            a {
+                color: #555555;
+            }
+        }
+        
+        .check{
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: block;
+            width: 100%;
+            height: 100%;
+            margin: 0px;
+            padding: 0px;
+            border: 0px;
+            opacity: 0;
+            background: rgb(255, 255, 255);
+        }
+
+        .unChecked {
+            background-position: -20px 0;
+        }
+    }
+
+    .register_text{
+        font-size: 12px;
+        color: #9d9d9d;
+
+        a{
+            color: #000000;
+            font-weight: bold;
+        }
+    }
+
+    .email {
+        margin-bottom: 15px;
+    }
+}
+
+
+.login-way {
+    h5{
+        margin:20px 0;
+        font-weight: normal;
+        color: #b1b1b1;
+    }
+
+    li{
+        display: inline-block;
+        margin: 0 5px;
+        width: 40px;
+        height: 40px;
+        text-align: center;
+        background-color: #b1b1b1;
+        border-radius: 50%;
+
+        
+        &.wechaticon:hover{
+            background-color:#49be38;
+        }
+        &.qqicon:hover{
+            background-color:#50BCF2;
+        }
+        &.googleicon:hover{
+            background-color:#F7566A;
+        }
+        &.weiboicon:hover{
+            background-color:#F6774F;
+        }
+        &.githubicon:hover{
+            background-color:#494D4F;
+        }
+    }
+
+
+    li:hover i{
+        color: #ffffff;
+    }
+
+    i {
+        line-height: 40px;
+        font-size: 25px;
+    }
+
+    .active{
+        color: #000000;
+    }
+}
+
+

@@ -6,17 +6,25 @@ import {} from './article.scss'
 class Article extends React.Component {
     constructor(props) {
         super(props)
-        
+        this.state = {
+            showType: this.props.shouldShow
+        }
     }
     render() {
         const ArticleList = this.props.ArticleList
         return (
             <div className="article-page">
                 <ArticleNav />
-                <ArticleTypeList show={this.props.shouldShow} articleTypeMap={this.props.typeList}/>
-                <ArticleList />
+                <ArticleTypeList showType={ this.state.showType } articleTypeMap={ this.props.typeList } changeShowType={ this.changeShowType.bind(this) }/>
+                <ArticleList showType={ this.state.showType } />
             </div>
         )
+    }
+
+    changeShowType(e, type) {
+        this.setState({
+            showType: type
+        })
     }
 }
 

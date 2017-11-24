@@ -15,6 +15,7 @@ import RightSidebar from './components/rightSidebar/'
 import Home from './components/home/'
 import Download from './components/download/'
 import Topic from './components/topic/'
+import Login from './components/login/'
   
 class App extends React.Component {
   constructor(props) {
@@ -25,9 +26,11 @@ class App extends React.Component {
           <Router>
               <div className='container'> 
                   <LeftSidebar />
+                  <Route path="/" component={Home} exact={true} />
                   <Route path="/home" component={Home} />
                   <Route path="/topic" component={Topic} />
                   <Route path="/download" component={Download} />
+                  <Route path="/login" component={Login} />
                   <RightSidebar />
               </div>
           </Router>
