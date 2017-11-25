@@ -21,7 +21,7 @@ class Home extends React.Component {
                         {name: 'hotnews', title: '时事热闻'},
                         {name: 'choice', title: '专题精选'}]
         return (
-            <div className="content">
+            <div className="article-area">
                 <ShowBar />
                 <Article shouldShow="daily" typeList={typeList} ArticleList={ArticleListView} />
             </div>

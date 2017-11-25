@@ -6,11 +6,22 @@ import RegisterForm from './registerForm.js'
 class Login extends React.Component {
     constructor(props) {
         super(props)
-        console.log(this)
-        this.state = {
+        this.state = this.props.location ? { 
+            formType: this.props.location.state.formType || 'login'
+        } : {
             formType: this.props.formType || 'login'
         }
+
     }
+
+    componentWillReceiveProps(nextProps) {
+        if (nextProps.location.state.formType !== this.props.location.state.formType) {
+            this.setState({
+                formType: nextProps.location.state.formType
+            })
+        }
+    }
+
 
     render() {
         return (

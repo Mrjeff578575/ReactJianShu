@@ -1,4 +1,5 @@
 import React from 'react'
+import { CSSTransitionGroup } from 'react-transition-group'
 
 import {} from './articleList.scss'
 
@@ -13,7 +14,13 @@ class ArticleList extends React.Component {
         )
         return (
             <ul>
-                { listItems }
+                <CSSTransitionGroup
+                    transitionName="fadeInRight"
+                    transitionEnterTimeout={500}
+                    transitionLeaveTimeout={300}
+                >
+                    { listItems }
+                </CSSTransitionGroup>
             </ul>
         )
     }

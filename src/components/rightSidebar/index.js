@@ -22,11 +22,11 @@ function LoginNav(props) {
     if (props.loginSuccess) {
         return (
             <nav>
-                <a href="javascript: void(0);" 
+                <a href="javascript: void(0);"
                     onClick={(e) => props.history.push({pathname: '/login', state: {formType: 'login'}})}>
                     <i className="iconfont icon-log-out"></i>登录</a>
                 <a href="javascript: void(0);" 
-                    onClick={(e) => props.history.push({pathname: '/login', state: {formType: 'register'}})}>>
+                    onClick={(e) => props.history.push({pathname: '/login', state: {formType: 'register'}})}>
                     <i className="iconfont icon-user1"></i>注册</a>
             </nav>
         )

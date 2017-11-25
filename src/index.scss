@@ -1,4 +1,51 @@
-.container{
+#app{
     height: 100%;
     display: flex;
+
+    .content {
+        flex: 1 0 auto;
+        display: flex;
+        height: 100%;
+    }
+
+}
+
+.example-enter {
+    opacity: 0.01;
+}
+  
+.example-enter.example-enter-active {
+    opacity: 1;
+    transition: opacity 500ms ease-in;
+}
+
+.example-leave {
+    opacity: 1;
+}
+
+.example-leave.example-leave-active {
+    opacity: 0.01;
+    transition: opacity 300ms ease-in;
+}
+
+.fadeInRight-enter {
+    opacity: 0;
+    transform: translate3d(3000px, 0, 0);
+}
+  
+.fadeInRight-enter.fadeInRight-enter-active {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+    transition: 0.75s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.fadeInRight-leave {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+}
+
+.fadeInRight-leave.fadeInRight-leave-active {
+    opacity: 0;
+    transform: translate3d(3000px, 0, 0);
+    transition: 2s ease-out;
 }

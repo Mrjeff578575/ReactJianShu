@@ -1,8 +1,9 @@
 .download-container{
-    flex: 1 0 auto;
-    height: 100%;
 
-    .content{
+    position: absolute;
+    width: 77.5%;
+
+    .download-content{
         width: 900px;
         margin: 0 auto;
         height: 568px;

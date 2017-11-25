@@ -9,7 +9,7 @@ class Download extends React.Component {
     render() {
         return (
             <div className="download-container">
-                <div className="content">
+                <div className="download-content">
                     <div className="page-left">
                         <div className="logo"></div>
                         <VersionControl />

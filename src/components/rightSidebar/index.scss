@@ -10,8 +10,9 @@
         font-size: 14px;
 
         a {
-            color: #555555;
+            color: #b1b1b1;
             padding: 0 5px;
+            transition: cubic-bezier(0.075, 0.82, 0.165, 1);
 
             &:hover {
                 color: black;

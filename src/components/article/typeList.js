@@ -8,7 +8,7 @@ class ArticleTypeList extends React.Component {
     render() {
         const listItems = this.articleTypeMap.map((type, index) => 
             <li key={index} className={ this.props.showType == type.name ? 'active' : ''} onClick={(e) => this.changeType(e, type.name)}>
-                <a href="#">{type.title}</a>
+                <a href="javascript: void(0);">{type.title}</a>
             </li>
         )
         return (

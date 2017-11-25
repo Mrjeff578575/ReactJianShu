@@ -6,14 +6,13 @@ import Article from '../article/index.js'
 class Topic extends React.Component {
     constructor(props) {
         super(props)
-        console.log(this.props)
     }
 
     render() {
         let typeList = [{name: 'hot',title: '热门'}, 
                         {name: 'recommend',title: '推荐'}]
         return (
-            <div className="content">
+            <div className="article-area">
                 <ShowBar />
                 <Article shouldShow="hot" typeList={typeList} ArticleList={ArticleListView} />
             </div>
